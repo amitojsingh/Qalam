@@ -9,6 +9,10 @@
   </head>
 
   <body>
+	  <% flash.each do |key,message| %>
+	<%= key == "notice"? "success": "danger" %>
+	<%= message %>
+	  <%end%>
     <%= yield %>
   </body>
 </html>
