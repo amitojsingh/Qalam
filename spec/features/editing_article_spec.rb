@@ -1,10 +1,13 @@
 require 'rails_helper'
 
-RSpec.feature " Editting an article" do 
-	before do 
-		@article= Article.create(title: "Title", body: "body") 
+RSpec.feature " Editting an article" do
+	before do
+		@john=User.create(email: "john@example.com",password: "password")
+		login_as(@john)
+
+		@article= Article.create(title: "Title", body: "body",user: @john)
 	end
-	scenario " A user updates an article" do 
+	scenario " A user updates an article" do
 		visit "/"
 		click_link @article.title
 
@@ -17,7 +20,7 @@ RSpec.feature " Editting an article" do
 		expect(page).to have_content("Article has been updated")
 		expect(page.current_path).to eq(article_path(@article))
 	end
-scenario " A user fails to updates an article" do 
+scenario " A user fails to updates an article" do
 		visit "/"
 		click_link @article.title
 
