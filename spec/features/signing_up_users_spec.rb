@@ -9,7 +9,7 @@ RSpec.feature "Signup users" do
 		fill_in "Password confirmation",with: "123456"
 		click_button "Sign up"
 
-	#	expect(page).to have_content("You have signed up sucessfully")
+		expect(page).to have_content("You have signed up successfully")
 
 	end
 
