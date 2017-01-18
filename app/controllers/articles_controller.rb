@@ -1,15 +1,16 @@
 class ArticlesController < ApplicationController
 #	before_action :authenticate_user!, except: [:index,:show]
 before_action :set_article, only: [:show,:edit,:update,:destroy]
-      
+
 	def index
 	  @articles=Article.all
   end
   def new
-	 @article=Article.new 
+	 @article=Article.new
   end
   def create
 	  @article=Article.new(article_params)
+    @article.user=current_user
 	 if @article.save
 	  flash[:success]= "Article has been created"
 	  redirect_to articles_path
@@ -26,9 +27,9 @@ before_action :set_article, only: [:show,:edit,:update,:destroy]
  def edit
  end
 
-  def update 
+  def update
 	   if @article.update(article_params)
-	  
+
 		  flash[:success] = "Article has been updated"
 		  redirect_to @article
 	  else
@@ -42,7 +43,7 @@ before_action :set_article, only: [:show,:edit,:update,:destroy]
 	  flash[:success]= "Article has been deleted"
 	  redirect_to articles_path
   end
-  end 
+  end
 
 
 protected
@@ -51,10 +52,10 @@ def resource_not_found
 	flash[:alert]=message
 	redirect_to root_path
 end
- 
+
 
   private
-  
+
   def set_article
   @article=Article.find(params[:id])
   end
