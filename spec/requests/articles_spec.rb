@@ -2,12 +2,12 @@ require 'rails_helper'
 
 RSpec.describe "Articles" ,type: :request do
 	before do
-		@john=User.create(email: "john@example.com",password: "12345")
-		@fred= User.create(email: "fred@example.com", password: "12345")
+		@john=User.create(email: "john@example.com",password: "123456")
+		@fred= User.create(email: "fred@example.com", password: "123456")
 		@article=Article.create!(title: "Title one", body: "body",user: @john)
 	end
 
-describe 'get /articles/:id/edit' do
+describe 'GET /articles/:id/edit' do
 context 'with not signed in user' do
 	before {get "/articles/#{@article.id}/edit"}
 	it "redirects to the sign in page" do
@@ -16,7 +16,7 @@ context 'with not signed in user' do
 		expect(flash[:alert]).to eq flash_message
 end
 end
-context  'with signed in user non owner' do
+context 'with signed in user non owner' do
 	before do
 		login_as(@fred)
 		get "/articles/#{@article.id}/edit"

@@ -25,15 +25,15 @@ before_action :set_article, only: [:show,:edit,:update,:destroy]
   end
 
  def edit
-	 unless @article.user==current_user
+	 unless @article.user == current_user
 		 flash[:alert]="You can only edit your own article"
 		 redirect_to root_path
 	 end
  end
 
   def update
-		unless @article.user== current_user
-			flash[:danger]="You can only edit your own article"
+		unless @article.user == current_user
+			flash[:alert]="You can only edit your own article"
 			redirect_to root_path
 		else
 		   if @article.update(article_params)
