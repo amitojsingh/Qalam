@@ -30,8 +30,22 @@ scenario "to not-owner signed in user show edit and delete button" do
 
 	expect(page).to have_content(@article.title)
 	expect(page).to have_content(@article.body)
-	expect(page).not_to have_link("Edit")
-	expect(page).not_to have_link("delete")
+	expect(page).not_to have_link("Edit Article")
+	expect(page).not_to have_link("Delete Article")
+	expect(current_path).to eq(article_path(@article))
+end
+scenario "to owner signed in user show edit and delete button" do
+
+ login_as(@john)
+	visit "/"
+
+
+	click_link @article.title
+
+	expect(page).to have_content(@article.title)
+	expect(page).to have_content(@article.body)
+	expect(page).to have_link("Edit Article")
+	expect(page).to have_link("Delete Article")
 	expect(current_path).to eq(article_path(@article))
 end
 end
