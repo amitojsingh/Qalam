@@ -6,10 +6,10 @@ RSpec.feature "Adding comments to articles" do
     @john=User.create(email: "john@example.com", password:"123456")
     @fred=User.create(email: "fred@example.com", password: "123456")
     @article1=Article.create(title: "Title",body: "Body", user: @john)
-    login_as(@fred)
   end
 
   scenario "Permits a signed in user to write comment" do
+    login_as(@fred)
   visit "/"
 
   click_link @article1.title
@@ -18,6 +18,6 @@ RSpec.feature "Adding comments to articles" do
 
   expect(page).to have_content("Comment has been created")
   expect(page).to have_content("peeeeekaaaboooo")
-  expect(current_path).to eq(articles_path(@article1.id))
+  expect(current_path).to eq(article_path(@article1))
 end
 end
