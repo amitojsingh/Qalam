@@ -1,0 +1,50 @@
+@import "variable.scss";
+.navbar-heading{
+  font-family: $heading;
+  font-size: 2.5em;
+  color: $sunheri;
+}
+a{
+  text-decoration-line: none;
+}
+ul{
+  list-style: none;
+}
+
+.navbar-toggle{
+  display:none;
+}
+
+.signup-lnk,.signin-lnk,.author{
+font-family:$head-font;
+color: $head-color;
+font-size:1.2em;
+&:hover{
+  border-bottom: 0.5em solid $sunheri;
+}
+}
+
+.text-center{
+  font-family:$head-font;
+  font-size:3em;
+  font-weight: normal;
+}
+.form-control{
+font-size:1em;
+font-family:$head-font;
+border-radius:2em;
+border:none;
+letter-spacing: 1px;
+padding:1.5em;
+background-color:#ecf0f1;
+}
+
+.form-label{
+  text-align:left;
+}
+
+.form-group{
+  margin:1em;
+}
+.email-field:focus{
+}
