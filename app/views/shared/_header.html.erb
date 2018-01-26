@@ -12,10 +12,10 @@
 				  </div>
 				  <div class="navbar-collapse" id="bs-example-navbar-collapse-1">
 					  <ul class="nav navbar-nav navbar-right">
-						  <li class="active"><%= link_to "Authors", "#", class: "author" %></li>
+						  <!--<li class="active"><%= link_to "Authors", "#", class: "author" %></li>-->
 
-							  <%if user_signed_in?%>
-								  <p class="navbar-text">signed in as <%="#{current_user.email}"%></p>
+								 <%if user_signed_in?%>
+								<%	"#{current_user.email}"%>
 								  <li><%= link_to "Sign out" ,destroy_user_session_path, method: :delete%></li>
 
 						  <% else %>

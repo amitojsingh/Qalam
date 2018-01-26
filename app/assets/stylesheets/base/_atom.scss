@@ -29,14 +29,28 @@ font-size:1.2em;
   font-size:3em;
   font-weight: normal;
 }
-.form-control{
+.form-control,.login-btn{
 font-size:1em;
 font-family:$head-font;
 border-radius:2em;
-border:none;
 letter-spacing: 1px;
-padding:1.5em;
-background-color:#ecf0f1;
+box-shadow:2px #000;
+}
+.form-control{
+  padding:1.5em;
+  padding-right:2em;
+  border:none;
+  background-color:#ecf0f1;
+  width:17em;
+}
+.login-btn{
+  padding:1em;
+  background:none;
+  border:2px solid #2ecc71;
+  &:hover{
+    background-color: #2ecc71;
+    color:#fff;
+  }
 }
 
 .form-label{
@@ -46,5 +60,28 @@ background-color:#ecf0f1;
 .form-group{
   margin:1em;
 }
-.email-field:focus{
+.form-title,.form-body{
+  width:85%;
+  border-radius:0;
+  background-color:#fff;
+  border:2px solird #000;
+  padding:1em;
+
+}
+.article-form{
+  margin-top:0;
+  margin-bottom:0;
+}
+.form-title{
+  font-weight:bold;
+  font-size:2em;
+  &:hover{
+    background-color:#ecf0f1;
+  }
+}
+.form-body{
+font-size:1.2em;
+}
+.submit-wrapper{
+  text-align: right;
 }
