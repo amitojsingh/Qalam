@@ -22,3 +22,32 @@ display:flex;
 .login-box,.signup-box{
   text-align: center;
 }
+
+.full-article,.detail-article,.comment-wrapper{
+  text-align:center;
+  margin:3em;
+  width:90%;
+}
+.article-body{
+width:70%;
+font-size: 1.2em;
+line-height: 1.5;
+margin-left:auto;
+margin-right:auto;
+color:#353b48;
+
+}
+
+.alert-main{
+  padding:1px;
+  text-align: center;
+  background:#ecf0f1;
+  opacity:0.5;
+
+}
+.article-form{
+  margin:1em;
+}
+.submit-wrapper{
+  margin-right:3em;
+}

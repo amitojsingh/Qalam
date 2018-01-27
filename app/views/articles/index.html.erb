@@ -5,13 +5,12 @@
 	<h1 id=no-articles>no articles created</h1>
 <%else%>
 <% @articles.each do |article|%>
-	<div class=" well well-lg">
+	<div class=" full-article">
 		<div class=" article-title">
-			<%=link_to article.title, article_path(article) %>
+			<%=link_to article.title, article_path(article), class: "title-lnk"%>
 		</div>
 		<div class="article-body">
-
-			<%=truncate(article.body,length: 500) %>
+			<%=truncate(article.body,length: 500)%>
 		</div>
 		<div class="author">
 			<p> Created by <%=article.user.email%></p>

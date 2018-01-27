@@ -15,7 +15,7 @@
 	<%end %>
 
 </article>
-	<div class='col-md-12'>
+	<div class='comment-wrapper'>
 		<%= form_for [@article,@comment],
 		:html => {class: "form-horizontal", role: "form"} do |f| %>
 			<% if @comment.errors.any? %>
@@ -35,12 +35,9 @@
 					</div>
 				</div>
 				<% end %>
-	<div class='form-group'>
-		<div class='control-label col-md-2'>
-			<%= f.label :body, 'New comment' %>
-		</div>
+	<div class='form-group'>	
 		<div class='col-md-10'>
-			<%= f.text_area :body, rows: 10, class: 'form-control', placeholder: 'Your comment' %>
+			<%= f.text_area :body, rows: 5, class: 'form-control form-comment', placeholder: 'Your comment' %>
 		</div>
 	</div>
 
