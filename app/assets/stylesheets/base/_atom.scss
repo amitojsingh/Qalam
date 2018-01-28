@@ -44,7 +44,7 @@ letter-spacing: 1px;
   padding:1.5em;
   padding-right:2em;
   border:none;
-  background-color:#ecf0f1;
+  background-color:$box-color;
   width:17em;
 }
 .login-btn{
@@ -95,7 +95,7 @@ letter-spacing: 1px;
   font-weight:bold;
   font-size:2em;
   &:hover{
-    background-color:#ecf0f1;
+    background-color:$back-color;
   }
 }
 .form-body{
@@ -129,5 +129,5 @@ font-size:1.2em;
   }
 }
 .form-comment{
-  width:70%;
+  width:90%;
 }
