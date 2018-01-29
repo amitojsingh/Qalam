@@ -26,13 +26,19 @@ font-size:1.2em;
 .author{
   fon-family:$head-font;
   color:$head-color;
-  font-size:1.2em;
+  font-size:0.707em;
+  width:70%;
+  margin-left:auto;
+  margin-right:auto;
 }
 
 .text-center,.article-detail-title{
   font-family:$head-font;
-  font-size:3em;
+  font-size:2.618em;
   font-weight: normal;
+  margin-left:auto;
+  margin-right:auto;
+  width:70%;
 }
 .form-control,.login-btn,.signup-btn{
 font-size:1em;
@@ -100,7 +106,7 @@ letter-spacing: 1px;
 }
 .form-body{
   width:85%;
-font-size:1.2em;
+font-size:1em;
 }
 
 .create-art{
@@ -122,12 +128,21 @@ font-size:1.2em;
 .title-lnk{
   color: #000;
   font-family:$head-font;
-  font-size:2.7em;
+  font-size:2.618em;
   font-weight: normal;
+  width:70%;
   &:hover{
     text-decoration: underline;
   }
 }
 .form-comment{
   width:90%;
+}
+
+#article-date{
+  font-size: 0.707em;
+width: 70%;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 1em;
 }

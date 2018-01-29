@@ -1,0 +1,463 @@
+@import url("https://fonts.googleapis.com/css?family=Berkshire+Swash|Dancing+Script|Great+Vibes");
+@import url("https://fonts.googleapis.com/css?family=Josefin+Slab");
+@import url("https://fonts.googleapis.com/css?family=Cinzel|Cormorant+Garamond|Julius+Sans+One|Playfair+Display");
+@import url("https://fonts.googleapis.com/css?family=Oranienbaum|Parisienne");
+@import url("https://fonts.googleapis.com/css?family=Berkshire+Swash|Dancing+Script|Great+Vibes");
+@import url("https://fonts.googleapis.com/css?family=Josefin+Slab");
+@import url("https://fonts.googleapis.com/css?family=Cinzel|Cormorant+Garamond|Julius+Sans+One|Playfair+Display");
+@import url("https://fonts.googleapis.com/css?family=Oranienbaum|Parisienne");
+@import url("https://fonts.googleapis.com/css?family=Berkshire+Swash|Dancing+Script|Great+Vibes");
+@import url("https://fonts.googleapis.com/css?family=Josefin+Slab");
+@import url("https://fonts.googleapis.com/css?family=Cinzel|Cormorant+Garamond|Julius+Sans+One|Playfair+Display");
+@import url("https://fonts.googleapis.com/css?family=Oranienbaum|Parisienne");
+/* line 2, /home/sifat/heroku/blog-app/app/assets/stylesheets/base/_molecule.scss */
+body {
+  background-color: #ecf0f1;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 8, /home/sifat/heroku/blog-app/app/assets/stylesheets/base/_molecule.scss */
+.container-fluid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 12, /home/sifat/heroku/blog-app/app/assets/stylesheets/base/_molecule.scss */
+.navbar-header {
+  width: 20%;
+}
+
+/* line 15, /home/sifat/heroku/blog-app/app/assets/stylesheets/base/_molecule.scss */
+.navbar-collapse {
+  width: 80%;
+}
+
+/* line 18, /home/sifat/heroku/blog-app/app/assets/stylesheets/base/_molecule.scss */
+.navbar-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row-reverse;
+      flex-flow: row-reverse;
+}
+/* line 21, /home/sifat/heroku/blog-app/app/assets/stylesheets/base/_molecule.scss */
+.navbar-right a {
+  padding-right: 1.5em;
+}
+
+/* line 25, /home/sifat/heroku/blog-app/app/assets/stylesheets/base/_molecule.scss */
+.login-box, .signup-box {
+  text-align: center;
+}
+
+/* line 29, /home/sifat/heroku/blog-app/app/assets/stylesheets/base/_molecule.scss */
+.full-article, .detail-article, .comment-wrapper {
+  width: 70%;
+  margin: 3em;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 1em;
+  border-radius: 45px;
+}
+
+/* line 38, /home/sifat/heroku/blog-app/app/assets/stylesheets/base/_molecule.scss */
+.article-body {
+  width: 70%;
+  font-size: 1em;
+  line-height: 1.24;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  color: #353b48;
+}
+
+/* line 49, /home/sifat/heroku/blog-app/app/assets/stylesheets/base/_molecule.scss */
+.alert-main {
+  padding: 1px;
+  text-align: center;
+  background: #fff;
+  opacity: 0.7;
+}
+
+/* line 56, /home/sifat/heroku/blog-app/app/assets/stylesheets/base/_molecule.scss */
+.article-form {
+  margin: 1em;
+}
+
+/* line 59, /home/sifat/heroku/blog-app/app/assets/stylesheets/base/_molecule.scss */
+.submit-wrapper {
+  margin-right: 3em;
+}
+
+/* line 62, /home/sifat/heroku/blog-app/app/assets/stylesheets/base/_molecule.scss */
+.particle-screen {
+  background-color: #ecf0f1;
+  position: fixed;
+  width: 99%;
+  height: 100%;
+  z-index: -3;
+}
+
+/* line 69, /home/sifat/heroku/blog-app/app/assets/stylesheets/base/_molecule.scss */
+.banner, .container {
+  position: relative;
+}
+
+/* line 72, /home/sifat/heroku/blog-app/app/assets/stylesheets/base/_molecule.scss */
+.article-title {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1em;
+}
+
+/* line 2, /home/sifat/heroku/blog-app/app/assets/stylesheets/base/_template.scss */
+html {
+  height: 100%;
+  width: 100%;
+}
+
+/* line 1, /home/sifat/heroku/blog-app/app/assets/stylesheets/base/reset.scss */
+body {
+  margin: 0;
+  padding: 0;
+}
+@import url("https://fonts.googleapis.com/css?family=Berkshire+Swash|Dancing+Script|Great+Vibes");
+@import url("https://fonts.googleapis.com/css?family=Josefin+Slab");
+@import url("https://fonts.googleapis.com/css?family=Cinzel|Cormorant+Garamond|Julius+Sans+One|Playfair+Display");
+@import url("https://fonts.googleapis.com/css?family=Oranienbaum|Parisienne");
+/* line 2, /home/sifat/heroku/blog-app/app/assets/stylesheets/base/_atom.scss */
+.navbar-heading {
+  font-family: "Parisienne", cursive;
+  font-size: 3em;
+  color: #e67e22;
+}
+
+/* line 7, /home/sifat/heroku/blog-app/app/assets/stylesheets/base/_atom.scss */
+a {
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+}
+
+/* line 10, /home/sifat/heroku/blog-app/app/assets/stylesheets/base/_atom.scss */
+ul {
+  list-style: none;
+}
+
+/* line 14, /home/sifat/heroku/blog-app/app/assets/stylesheets/base/_atom.scss */
+.navbar-toggle {
+  display: none;
+}
+
+/* line 18, /home/sifat/heroku/blog-app/app/assets/stylesheets/base/_atom.scss */
+.signup-lnk, .signin-lnk {
+  font-family: "Josegin Slab", serif;
+  color: #2C3A47;
+  font-size: 1.2em;
+}
+/* line 22, /home/sifat/heroku/blog-app/app/assets/stylesheets/base/_atom.scss */
+.signup-lnk:hover, .signin-lnk:hover {
+  border-bottom: 0.5em solid #e67e22;
+}
+
+/* line 26, /home/sifat/heroku/blog-app/app/assets/stylesheets/base/_atom.scss */
+.author {
+  fon-family: "Josegin Slab", serif;
+  color: #2C3A47;
+  font-size: 0.707em;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 35, /home/sifat/heroku/blog-app/app/assets/stylesheets/base/_atom.scss */
+.text-center, .article-detail-title {
+  font-family: "Josegin Slab", serif;
+  font-size: 2.618em;
+  font-weight: normal;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+/* line 43, /home/sifat/heroku/blog-app/app/assets/stylesheets/base/_atom.scss */
+.form-control, .login-btn, .signup-btn {
+  font-size: 1em;
+  font-family: "Josegin Slab", serif;
+  border-radius: 2em;
+  letter-spacing: 1px;
+}
+
+/* line 49, /home/sifat/heroku/blog-app/app/assets/stylesheets/base/_atom.scss */
+.form-control {
+  padding: 1.5em;
+  padding-right: 2em;
+  border: none;
+  background-color: #fff;
+  width: 17em;
+}
+
+/* line 56, /home/sifat/heroku/blog-app/app/assets/stylesheets/base/_atom.scss */
+.login-btn {
+  padding: 1em;
+  background: none;
+  border: 2px solid #2ecc71;
+}
+/* line 60, /home/sifat/heroku/blog-app/app/assets/stylesheets/base/_atom.scss */
+.login-btn:hover {
+  background-color: #2ecc71;
+  color: #fff;
+}
+
+/* line 65, /home/sifat/heroku/blog-app/app/assets/stylesheets/base/_atom.scss */
+.signup-btn {
+  padding: 1em;
+  background: none;
+  border: 2px solid #e67e22;
+}
+/* line 69, /home/sifat/heroku/blog-app/app/assets/stylesheets/base/_atom.scss */
+.signup-btn:hover {
+  background-color: #e67e22;
+  color: #fff;
+}
+
+/* line 74, /home/sifat/heroku/blog-app/app/assets/stylesheets/base/_atom.scss */
+.form-label {
+  text-align: left;
+}
+
+/* line 78, /home/sifat/heroku/blog-app/app/assets/stylesheets/base/_atom.scss */
+.form-group {
+  margin: 1em;
+}
+
+/* line 81, /home/sifat/heroku/blog-app/app/assets/stylesheets/base/_atom.scss */
+.form-title, .form-body {
+  width: 85%;
+  border-radius: 0;
+  background-color: #fff;
+  border: 2px solird #000;
+  padding: 1em;
+}
+
+/* line 89, /home/sifat/heroku/blog-app/app/assets/stylesheets/base/_atom.scss */
+.article-form {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* line 93, /home/sifat/heroku/blog-app/app/assets/stylesheets/base/_atom.scss */
+.btn-wrapper {
+  width: 100%;
+  text-align: right;
+  margin-right: 2em;
+}
+
+/* line 98, /home/sifat/heroku/blog-app/app/assets/stylesheets/base/_atom.scss */
+.form-title {
+  clear: right;
+  width: 80%;
+  font-weight: bold;
+  font-size: 2em;
+}
+/* line 103, /home/sifat/heroku/blog-app/app/assets/stylesheets/base/_atom.scss */
+.form-title:hover {
+  background-color: #ecf0f1;
+}
+
+/* line 107, /home/sifat/heroku/blog-app/app/assets/stylesheets/base/_atom.scss */
+.form-body {
+  width: 85%;
+  font-size: 1em;
+}
+
+/* line 112, /home/sifat/heroku/blog-app/app/assets/stylesheets/base/_atom.scss */
+.create-art {
+  padding: 1em;
+  font-size: 1em;
+  border: none;
+  border-radius: 45px;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  background: #fff;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+/* line 120, /home/sifat/heroku/blog-app/app/assets/stylesheets/base/_atom.scss */
+.create-art:hover {
+  background-color: #3498db;
+  box-shadow: 0px 15px 20px rgba(52, 152, 219, 0.4);
+  color: #fff;
+  -webkit-transform: translateY(-7px);
+          transform: translateY(-7px);
+}
+
+/* line 128, /home/sifat/heroku/blog-app/app/assets/stylesheets/base/_atom.scss */
+.title-lnk {
+  color: #000;
+  font-family: "Josegin Slab", serif;
+  font-size: 2.618em;
+  font-weight: normal;
+  width: 70%;
+}
+/* line 134, /home/sifat/heroku/blog-app/app/assets/stylesheets/base/_atom.scss */
+.title-lnk:hover {
+  text-decoration: underline;
+}
+
+/* line 138, /home/sifat/heroku/blog-app/app/assets/stylesheets/base/_atom.scss */
+.form-comment {
+  width: 90%;
+}
+
+/* line 142, /home/sifat/heroku/blog-app/app/assets/stylesheets/base/_atom.scss */
+#article-date {
+  font-size: 0.707em;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1em;
+}
+@import url("https://fonts.googleapis.com/css?family=Berkshire+Swash|Dancing+Script|Great+Vibes");
+@import url("https://fonts.googleapis.com/css?family=Josefin+Slab");
+@import url("https://fonts.googleapis.com/css?family=Cinzel|Cormorant+Garamond|Julius+Sans+One|Playfair+Display");
+@import url("https://fonts.googleapis.com/css?family=Oranienbaum|Parisienne");
+/* line 2, /home/sifat/heroku/blog-app/app/assets/stylesheets/base/_molecule.scss */
+body {
+  background-color: #ecf0f1;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 8, /home/sifat/heroku/blog-app/app/assets/stylesheets/base/_molecule.scss */
+.container-fluid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 12, /home/sifat/heroku/blog-app/app/assets/stylesheets/base/_molecule.scss */
+.navbar-header {
+  width: 20%;
+}
+
+/* line 15, /home/sifat/heroku/blog-app/app/assets/stylesheets/base/_molecule.scss */
+.navbar-collapse {
+  width: 80%;
+}
+
+/* line 18, /home/sifat/heroku/blog-app/app/assets/stylesheets/base/_molecule.scss */
+.navbar-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row-reverse;
+      flex-flow: row-reverse;
+}
+/* line 21, /home/sifat/heroku/blog-app/app/assets/stylesheets/base/_molecule.scss */
+.navbar-right a {
+  padding-right: 1.5em;
+}
+
+/* line 25, /home/sifat/heroku/blog-app/app/assets/stylesheets/base/_molecule.scss */
+.login-box, .signup-box {
+  text-align: center;
+}
+
+/* line 29, /home/sifat/heroku/blog-app/app/assets/stylesheets/base/_molecule.scss */
+.full-article, .detail-article, .comment-wrapper {
+  width: 70%;
+  margin: 3em;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 1em;
+  border-radius: 45px;
+}
+
+/* line 38, /home/sifat/heroku/blog-app/app/assets/stylesheets/base/_molecule.scss */
+.article-body {
+  width: 70%;
+  font-size: 1em;
+  line-height: 1.24;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  color: #353b48;
+}
+
+/* line 49, /home/sifat/heroku/blog-app/app/assets/stylesheets/base/_molecule.scss */
+.alert-main {
+  padding: 1px;
+  text-align: center;
+  background: #fff;
+  opacity: 0.7;
+}
+
+/* line 56, /home/sifat/heroku/blog-app/app/assets/stylesheets/base/_molecule.scss */
+.article-form {
+  margin: 1em;
+}
+
+/* line 59, /home/sifat/heroku/blog-app/app/assets/stylesheets/base/_molecule.scss */
+.submit-wrapper {
+  margin-right: 3em;
+}
+
+/* line 62, /home/sifat/heroku/blog-app/app/assets/stylesheets/base/_molecule.scss */
+.particle-screen {
+  background-color: #ecf0f1;
+  position: fixed;
+  width: 99%;
+  height: 100%;
+  z-index: -3;
+}
+
+/* line 69, /home/sifat/heroku/blog-app/app/assets/stylesheets/base/_molecule.scss */
+.banner, .container {
+  position: relative;
+}
+
+/* line 72, /home/sifat/heroku/blog-app/app/assets/stylesheets/base/_molecule.scss */
+.article-title {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1em;
+}
+@import url("https://fonts.googleapis.com/css?family=Berkshire+Swash|Dancing+Script|Great+Vibes");
+@import url("https://fonts.googleapis.com/css?family=Josefin+Slab");
+@import url("https://fonts.googleapis.com/css?family=Cinzel|Cormorant+Garamond|Julius+Sans+One|Playfair+Display");
+@import url("https://fonts.googleapis.com/css?family=Oranienbaum|Parisienne");
+/* line 2, /home/sifat/heroku/blog-app/app/assets/stylesheets/base/_template.scss */
+html {
+  height: 100%;
+  width: 100%;
+}
+@import url("https://fonts.googleapis.com/css?family=Berkshire+Swash|Dancing+Script|Great+Vibes");
+@import url("https://fonts.googleapis.com/css?family=Josefin+Slab");
+@import url("https://fonts.googleapis.com/css?family=Cinzel|Cormorant+Garamond|Julius+Sans+One|Playfair+Display");
+@import url("https://fonts.googleapis.com/css?family=Oranienbaum|Parisienne");
+/* line 1, /home/sifat/heroku/blog-app/app/assets/stylesheets/base/reset.scss */
+body {
+  margin: 0;
+  padding: 0;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
