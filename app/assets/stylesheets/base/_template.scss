@@ -3,3 +3,51 @@ html{
   height: 100%;
   width: 100%;
 }
+.navbar-header{
+  padding:3em;
+  padding-bottom:1em;
+}
+
+.index-article{
+  padding:4em;
+  padding-bottom:2em;
+  padding-top:2em;
+  margin-bottom:1em;
+  margin-left:auto;
+  margin-right:auto;
+}
+.detail-article,.comment-box{
+  margin:3em;
+}
+.detail-article{
+  margin-bottom:0;
+  padding:1em;
+}
+.comment-wrapper{
+  margin:1em;
+}
+.article-wrapper{
+}
+
+.article-title{
+  margin-bottom:1.5em;
+}
+
+.detail-wrapper{
+  width:80%;
+  margin-left:auto;
+  margin-right:auto;
+}
+.comment-wrapper{
+  margin:1em;
+}
+.show-comment{
+  margin:1em;
+}
+
+.updel-buttons{
+  margin-top:2em;
+}
+.edit-article{
+  padding-right:0.4em;
+}

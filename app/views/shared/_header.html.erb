@@ -1,5 +1,5 @@
 <header role="banner">
-	
+
 		  <nav class="navbar navbar-default" role="navigation">
 			  <div class="container-fluid">
 				  <div class="navbar-header">
@@ -17,7 +17,7 @@
 
 								 <%if user_signed_in?%>
 								<%	"#{current_user.email}"%>
-								  <li><%= link_to "Sign out" ,destroy_user_session_path, method: :delete%></li>
+								  <li><%= link_to "Sign out" ,destroy_user_session_path, method: :delete, class: "signout-lnk"%></li>
 
 						  <% else %>
 						  <li><%= link_to "Sign up" ,new_user_registration_path, class:"signup-lnk"%></li>

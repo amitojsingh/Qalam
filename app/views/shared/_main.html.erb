@@ -1,12 +1,8 @@
  <div class="container">
-		  <div class="row">
-			  <div class="col-md-12">
 				  <% flash.each do |key, message| %>
 					  <div class="alert-main alert-<%= key == 'notice'? 'success': 'danger' %>">
 						  <p class="alert-msg"><%= message %></p>
 					  </div>
 				  <% end %>
 				  <%= yield %>
-			  </div>
-		  </div>
-	  </div>
+  </div>

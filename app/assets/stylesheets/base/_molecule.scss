@@ -26,24 +26,19 @@ display:flex;
   text-align: center;
 }
 
-.full-article,.detail-article,.comment-wrapper{
+.full-article,.detail-article,.comment-box{
   width:70%;
-  margin:3em;
-  margin-left:auto;
-  margin-right:auto;
-  background-color:rgba(255,255,255,0.7);
-padding: 1em;
-border-radius: 45px;
+  background-color:#fff;
+}
+.comment-wrapper{
+  border:none;
 }
 .article-body{
 width:70%;
 font-size: 1em;
 line-height: 1.24;
 text-align: left;
-margin-left:auto;
-margin-right:auto;
 color:#353b48;
-
 }
 
 .alert-main{
@@ -71,7 +66,17 @@ color:#353b48;
 }
 .article-title{
   width:70%;
-  margin-left:auto;
-  margin-right:auto;
-  margin-bottom:1em;
 }
+.new-article-wrapper{
+  margin:2em;
+}
+
+.comment{
+  .comment-button-wrapper{
+    .comment-button{
+      padding:0.5em;
+      color:#333;
+
+      }
+    }
+  }
