@@ -7,7 +7,7 @@
 
 			</div>
 			<div class="article-body">
-				<%=@article.body%>
+				<p><%=@article.body%></p>
 			</div>
 			<div class="updel-buttons">
 				<% if user_signed_in? && current_user==@article.user%>

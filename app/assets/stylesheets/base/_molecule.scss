@@ -35,7 +35,7 @@ display:flex;
   border:none;
 }
 .article-body{
-width:70%;
+  width:80%;
 font-size: 1em;
 line-height: 1.24;
 text-align: left;
@@ -45,7 +45,8 @@ color:#353b48;
 .alert-main{
   padding:1px;
   text-align: center;
-  background:$back-color;
+  background:#333;
+  color:#fff;
 
 }
 .article-form{
@@ -64,7 +65,7 @@ color:#353b48;
   position:relative;
 }
 .article-title{
-  width:70%;
+  width:100%;
 }
 .new-article-wrapper{
   margin:2em;
