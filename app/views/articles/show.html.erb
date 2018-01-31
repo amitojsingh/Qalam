@@ -45,11 +45,11 @@
 			<% if @article.comments.any? %>
 				<% persisted_comments(@comments).each do |comment| %>
 				<div class="show-comment">
-				<div class="name-author">
-					<span><%=comment.user.email %> </span> said:
-				</div>
 					<div class="comment-body">
 						<%= comment.body %>
+					</div>
+					<div class="name-author">
+						<span><%=comment.user.email %> </span> said:
 					</div>
 					<div class="comment-time">
 						<%= time_ago_in_words(comment.created_at) %>

@@ -4,6 +4,10 @@ body{
   width:100%;
   height:100%;
 }
+.banner{
+  background-color: #fff;
+}
+
 
 .container-fluid{
 display:flex;
@@ -18,9 +22,6 @@ display:flex;
 .navbar-right{
   display:flex;
   flex-flow: row-reverse;
-  a{
-    padding-right:1.5em;
-  }
 }
 .login-box,.signup-box{
   text-align: center;
@@ -44,8 +45,7 @@ color:#353b48;
 .alert-main{
   padding:1px;
   text-align: center;
-  background:$box-color;
-  opacity:0.7;
+  background:$back-color;
 
 }
 .article-form{
@@ -55,11 +55,10 @@ color:#353b48;
   margin-right:3em;
 }
 .particle-screen{
-  background-color:$back-color;
   position:fixed;
-  width:99%;
   height:100%;
   z-index: -3;
+
 }
 .banner,.container{
   position:relative;
