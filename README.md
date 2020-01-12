@@ -2,7 +2,7 @@
 Qalam is most pleasing and cordial blog application design and develop in Ruby On Rails using Test Driven Development.  
 Basically, Qalam will help the user who loves to write blog and share his story with Plain Text format
 
-![Qalam](/Qalam.jpg)
+![Qalam](../public/images/home.jpg)
 
 ## Installing Qalam ?
 To install Qalam, you need to first install meteor.
