@@ -19,9 +19,9 @@ To install Qalam, you need to first install meteor.
 <code>rails s</code>
 
 ## Screenshots
-Note in lord-byron
-![Qalam](/public/screenshots/1.png)
-Grammar mode in lord-byron
-![Qalam](/public/screenshots/2.png)
-Highlighting parts of speech in lord-byron
-![Qalam](/public/screenshots/3.png)
+Login in Qalam
+![Qalam](https://github.com/amitojsingh/Qalam/blob/master/public/images/1.png)
+Create mode in Qalam
+![Qalam](https://github.com/amitojsingh/Qalam/blob/master/public/images/4.png)
+Display Post mode in Qalam
+![Qalam](https://github.com/amitojsingh/Qalam/blob/master/public/images/3.png)
