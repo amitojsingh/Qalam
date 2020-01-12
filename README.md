@@ -1,24 +1,27 @@
-# README
+# Qalam
+Qalam is most pleasing and cordial blog application design and develop in Ruby On Rails using Test Driven Development.  
+Basically, Qalam will help the user who loves to write blog and share his story with Plain Text format
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+![Qalam](/Qalam.jpg)
 
-Things you may want to cover:
+## Installing Qalam ?
+To install Qalam, you need to first install meteor.
+</br></br>
+<b> Install Ruby On Rails</b></br>
+<code> curl http://install.meteor.com | sh </code>
+</br></br>
+<b> Clone Qalam </b></br>
+<code> git clone https://github.com/amitojsingh/Qalam </code>
+</br></br>
+<p>Go into Qalam Directory and run bundle command</p></br>
+<code> bundle install</code>
+<p> Run the project using rails</p>
+<code>rails s</code>
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Screenshots
+Note in lord-byron
+![Qalam](/public/screenshots/1.png)
+Grammar mode in lord-byron
+![Qalam](/public/screenshots/2.png)
+Highlighting parts of speech in lord-byron
+![Qalam](/public/screenshots/3.png)
